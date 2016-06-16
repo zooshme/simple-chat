@@ -14,7 +14,7 @@ port = 3000
 # 'secure' will disable HTTPS and use HTTP instead when set to 'false'
 # 'key_file' and 'cert_file' are required for serving HTTPS
 #------------------------------------------------------------------------------
-secure = false
+# secure = false
 key_file = "horizon-key.pem"
 cert_file = "horizon-cert.pem"
 
@@ -26,7 +26,7 @@ cert_file = "horizon-cert.pem"
 # 'serve_static' will serve files from the given directory over HTTP/HTTPS
 #------------------------------------------------------------------------------
 project_name = "chat"
-# serve_static = "dist"
+serve_static = "dist"
 
 
 ###############################################################################
@@ -49,7 +49,7 @@ auto_create_index = true
 # 'start_rethinkdb' will run an internal RethinkDB instance
 #------------------------------------------------------------------------------
 # connect = "localhost:28015"
-start_rethinkdb = true
+# start_rethinkdb = true
 
 
 ###############################################################################
@@ -69,7 +69,7 @@ start_rethinkdb = true
 # 'auth_redirect' specifies where users will be redirected to after login
 #------------------------------------------------------------------------------
 token_secret = "bHaI7XIpzyq+otDv8SHiwLgLqASNqMG1xXI7GsYRdwO/S5UClENOuuB0aEOWWSFVVt8GAjUuDSZoUIEhihGDfw=="
-allow_anonymous = true
+allow_anonymous = false
 allow_unauthenticated = false
 auth_redirect = "/"
 #

@@ -49,7 +49,7 @@ auto_create_index = true
 # 'start_rethinkdb' will run an internal RethinkDB instance
 #------------------------------------------------------------------------------
 # connect = "localhost:28015"
-# start_rethinkdb = true
+start_rethinkdb = true
 
 
 ###############################################################################

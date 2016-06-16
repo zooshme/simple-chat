@@ -5,28 +5,20 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <form id="form">
-    <input type="text" name="title" placeholder="Conversation Title" id="title">
-    <textarea name="description" placeholder="Conversation Description..." id="description"></textarea>
-    <input type="submit" value="Submit">
-  </form>
-  <div id="app"></div>
+  <div id="forbidden">
+    Access to this app is forbidden. You need to <a href="#" id="sign-in">authenticate with Twitter</a>.
+
+  </div>
+  <div id="app">
+    <form id="form">
+      <textarea name="message" placeholder="Conversation Description..." id="message"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+
+  </div>
   <script src="/horizon/horizon.js"></script>
   <script src="/js/lib/lodash.js"></script>
   <script src="/js/lib/jquery.min.js"></script>
-  <script>
-    var hz = new Horizon({
-      authType: 'twitter'
-    });
-    if (!hz.hasAuthToken()) {
-
-    } else {
-      hz.onReady(function() {
-        init();
-      });
-      hz.connect();
-    }
-  </script>
   <script src="/js/app.js"></script>
 </body>
 </html>
